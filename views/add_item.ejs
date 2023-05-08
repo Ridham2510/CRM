@@ -1,0 +1,35 @@
+<%- include('header') %>
+<div class="col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h5>Material Form Inputs With Static Label</h5>
+            <!--<span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>-->
+        </div>
+        <div class="card-block">
+            <form class="form-material" action="/insert_item" method="post" enctype="multipart/form-data">
+                <div class="form-group form-default form-static-label">
+                    <input type="text" name="item_name" class="form-control" placeholder="Enter Product Name">
+                    <span class="form-bar"></span>
+                    <label class="float-label">Product Name</label>
+                </div>
+                <div class="form-group form-default form-static-label">
+                    <input type="text" name="item_price" class="form-control" placeholder="Enter Product Price">
+                    <span class="form-bar"></span>
+                    <label class="float-label">Product Name</label>
+                </div>
+                <div class="form-group form-default form-static-label">
+                    <textarea name="item_description" id="" cols="30" rows="10"></textarea>
+                    <span class="form-bar"></span>
+                    <label class="float-label">Description</label>
+                </div>
+                <div class="form-group form-default form-static-label">
+                    <input type="file" name="item_img" class="form-control" placeholder="Enter Password">
+                    <span class="form-bar"></span>
+                    <label class="float-label">Upload File</label>
+                </div>
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('footer') %>
